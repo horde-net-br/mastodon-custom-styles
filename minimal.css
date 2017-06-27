@@ -1,0 +1,262 @@
+/* Body */
+body,
+body.app-body,
+body.admin,
+.ui {
+  color: #14171a;
+  background: #fff;
+}
+
+.drawer__header,
+.drawer__inner,
+.column,
+.column > .scrollable,
+.column-header,
+.empty-column-indicator {
+  background: #fff;
+}
+
+.column,
+.drawer {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  padding: 10px 0;
+}
+
+.column {
+  border: 0 solid red;
+}
+
+.scrollable {
+  overflow-y: auto;
+  background: #fff;
+  border: 0 solid red;
+}
+
+.detailed-status {
+  background: #fff;
+  padding: 14px 10px;
+}
+
+.detailed-status__display-name strong {
+  color: inherit;
+  font-size: 16px;
+}
+
+.detailed-status__action-bar {
+  background: #fff;
+  border-top: 0 solid #393f4f;
+  border-bottom: 0 solid #393f4f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 10px 0;
+}
+
+.column-header {
+  color: rgba(20, 23, 26, 0.9);
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 15px 0 30px 6px;
+}
+
+.column-header__icon {
+  display: none;
+}
+
+.column-header__button {
+  color: rgba(20, 23, 26, 0.6);
+  font-size: 16px;
+  padding: 0 15px;
+  border: 0;
+  cursor: pointer;
+  background: #fff;
+}
+
+.column-header__back-button,
+.column-back-button {
+  color: rgba(20, 23, 26, 0.6);
+  font-size: 16px;
+  font-family: inherit;
+  flex: 0 0 auto;
+  padding: 0 5px 0 0;
+  border: 0;
+  cursor: pointer;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  background: #fff;
+  z-index: 3;
+}
+
+.column-back-button {
+  color: rgba(20, 23, 26, 0.9);
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 15px 0 30px 6px;
+}
+
+.media-gallery {
+  margin-top: 8px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.media-spoiler,
+.video-error-cover {
+  color: rgba(20, 23, 26, 0.8);
+  text-align: left;
+  align-items: left;
+  justify-content: center;
+  height: 100%;
+  cursor: pointer;
+  border: 0 solid rgba(20, 23, 26, 0.2);
+  background-color: rgba(20, 23, 26, 0.08);
+  background-image: repeating-linear-gradient(135deg, transparent, transparent 10px, white 10px, white 20px);
+  position: relative;
+  z-index: 100;
+}
+
+.media-spoiler__warning,
+.media-spoiler__trigger {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  letter-spacing: 0.085em;
+  text-transform: uppercase;
+  display: block;
+  margin-left: 15%;
+}
+
+.media-spoiler__trigger {
+  font-size: 11px;
+  line-height: 1.5em;
+}
+
+.column-header__collapsible > div {
+  background: #fff;
+}
+
+.missing-indicator {
+  color: #14171a;
+  background: #fff;
+}
+
+.status {
+  margin: 0 1em 0 0;
+  padding: 8px 30px 2em 68px;
+  border-bottom: 0;
+}
+
+.status.status-direct {
+  border: 10px solid rgba(20, 23, 26, 0.1);
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.status.status-direct + .status.status-direct {
+  border-top: none;
+}
+
+.notification {
+  padding: 0 0 2em;
+}
+
+.notification__display-name:hover {
+  color: inherit;
+}
+
+.account {
+  padding: 10px;
+  border-bottom: 0;
+}
+
+.account__display-name strong,
+.status__display-name strong {
+  color: #14171a;
+}
+
+.reply-indicator__content a,
+.status__content a {
+  color: #a8afbc;
+}
+
+.status__content .status__content__spoiler-link {
+  color: rgba(20, 23, 26, 0.9);
+  background: rgba(20, 23, 26, 0.1);
+}
+
+.status__content .status__content__spoiler-link:hover {
+  color: #fff;
+  background: rgba(20, 23, 26, 0.6);
+}
+
+.muted .status__content a,
+.muted .status__content p,
+.muted .status__display-name strong {
+  color: rgba(20, 23, 26, 0.4);
+  font-style: italic;
+}
+
+.notification__message {
+  color: #14171a;
+}
+
+.search__input {
+  color: #14171a;
+  border-bottom: 1px solid #14171a;
+  background: #fff;
+}
+
+.search__icon .fa {
+  color: #14171a;
+}
+
+.simple_form .input.boolean label,
+.simple_form .input.check_boxes .label_input > label,
+.simple_form .input.file .label_input > label,
+.simple_form .input.radio_buttons .label_input > label,
+.simple_form .input.select .label_input > label,
+.simple_form span.hint {
+  color: inherit;
+}
+
+.compose-form__buttons {
+  background: none;
+  box-shadow: none;
+}
+
+.column-subheading {
+  background: none;
+  color: inherit;
+}
+
+.getting-started__wrapper .column-link {
+  background: none;
+  color: inherit;
+  padding-left: 36px;
+}
+
+.getting-started__wrapper .column-link:hover {
+  background: #f1f1f1;
+}
+
+@media (min-width: 1200px) {
+  .drawer {
+    width: 300px;
+  }
+
+  .column {
+    margin: 0;
+    padding: 10px 1em 0;
+    width: calc((100% - 300px) / 3);
+  }
+}
