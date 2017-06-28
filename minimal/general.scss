@@ -1,4 +1,3 @@
-
 /*----------------------------------------*/
 /* Body */
 /*----------------------------------------*/
@@ -56,26 +55,92 @@
             transition: background .2s ease-out;
   }
 
-
   .privacy-dropdown {
-      position: relative;
-      margin: 0 10px;
+    position: relative;
+    margin: 0 10px;
+  }
+
+  .navigation-bar strong {
+    color: rgba(20,23,26,0.8);
+  }
+
+  .privacy-dropdown.active .privacy-dropdown__value {
+    background: #fff;
+    border-radius: 4px 4px 0 0;
+    -webkit-box-shadow: 0 -4px 6px rgba(0,0,0,.1);
+            box-shadow: 0 -4px 6px rgba(0,0,0,.1);
+  }
+
+  .privacy-dropdown.active .privacy-dropdown__dropdown {
+    display: block;
+    -webkit-box-shadow: 2px 4px 6px rgba(0,0,0,.3);
+            box-shadow: 2px 4px 6px rgba(0,0,0,.3);
+  }
+
+  .button {
+    background-color: rgba(20,23,26,0.8);
+  }
+
+  .button:active, .button:focus, .button:hover {
+    background-color: rgba(20,23,26,0.4);
+    -webkit-transition: all .2s ease-out;
+            transition: all .2s ease-out;
   }
 
   .character-counter__wrapper {
-      line-height: 36px;
-      margin-right: 16px;
-      padding-top: 4px;
+    line-height: 36px;
+    margin-right: 16px;
+    padding-top: 4px;
   }
 
   .compose-form__publish-button-wrapper {
-      overflow: hidden;
-      padding-top: 3px;
+    overflow: hidden;
+    padding-top: 4px;
   }
 
   .compose-form__buttons {
     background: none;
     box-shadow: none;
+  }
+
+  .autosuggest-textarea__textarea {
+    background: #fff;
+    border-radius: 0;
+    padding-bottom: 0;
+    padding-right: 32px;
+    min-height: 100px;
+    resize: none;
+  }
+
+  .autosuggest-textarea__textarea,
+  .spoiler-input__input {
+    color: rgba(20,23,26,0.8);
+    font-size: 14px;
+    font-family: inherit;
+    margin: 0;
+    padding: 10px 25px 10px 10px;
+    width: 100%;
+    display: block;
+    border-left: 0 solid rgba(20,23,26,0.1);
+    border-radius: 0;
+    outline: 0;
+    resize: vertical;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background-color: rgba(20,23,26,0.04);
+  }
+
+  .autosuggest-textarea__textarea:focus,
+  .spoiler-input__input:focus {
+    color: rgba(20,23,26,1);
+    border-left: 0 solid rgba(20,23,26,0.6);
+    background-color: rgba(20,23,26,0.08);
+  }
+
+  .compose-form__autosuggest-wrapper .emoji-picker__dropdown {
+    position: absolute;
+    right: 3px;
+    top: 3px;
   }
 
 
@@ -128,24 +193,24 @@
    padding: 14px 10px;
  }
 
- .detailed-status__display-name strong {
-     color: inherit;
-     font-size: 16px;
- }
+  .detailed-status__display-name strong {
+    color: inherit;
+    font-size: 16px;
+  }
 
- .detailed-status__action-bar {
-   background: #fff;
-   border-top: 0 solid #393f4f;
-   border-bottom: 0 solid #393f4f;
-   display: -webkit-box;
-   display: -ms-flexbox;
-   display: flex;
-   -webkit-box-orient: horizontal;
-   -webkit-box-direction: normal;
-   -ms-flex-direction: row;
-   flex-direction: row;
-   padding: 10px 0;
- }
+  .detailed-status__action-bar {
+    background: #fff;
+    border-top: 0 solid #393f4f;
+    border-bottom: 0 solid #393f4f;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding: 10px 0;
+  }
 
 
 /*----------------------------------------*/
@@ -161,22 +226,22 @@
    padding: 15px 0 30px 6px;
  }
 
- .column-header__collapsible > div {
-   background: #fff;
- }
+  .column-header__collapsible > div {
+    background: #fff;
+  }
 
- .column-header__icon {
-     display: none;
- }
+  .column-header__icon {
+    display: none;
+  }
 
- .column-header__button {
-     color: rgba(20,23,26,0.6);
-     font-size: 16px;
-     padding: 0 15px;
-     border: 0;
-     cursor: pointer;
-     background: #fff;
- }
+  .column-header__button {
+    color: rgba(20,23,26,0.6);
+    font-size: 16px;
+    padding: 0 15px;
+    border: 0;
+    cursor: pointer;
+    background: #fff;
+  }
 
  .column-header__back-button,
  .column-back-button {
@@ -341,4 +406,3 @@
    }
 
 }
-
