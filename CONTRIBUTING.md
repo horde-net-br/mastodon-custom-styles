@@ -4,7 +4,7 @@ It is normal compiled CSS to generate complex conflicts to be resolved, perhaps 
 
 ## Guidelines
 
-Follow the setting to compile SASS using Terminal for Minimal CSS example:
+Follow the setting to compile SASS using Terminal for the Minimal style example:
 
 ```
 sass --watch minimal/_main.scss:minimal.css --style expanded --precision 3 --no-cache --sourcemap=none
