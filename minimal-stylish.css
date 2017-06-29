@@ -3,7 +3,11 @@
   /*----------------------------------------*/
   /* Body */
   /*----------------------------------------*/
-  body,
+  body {
+    color: #14171a;
+    background: #fff;
+  }
+
   body.app-body,
   body.admin,
   .ui {
@@ -154,13 +158,130 @@
     color: #14171a;
   }
 
+  /*----------------------------------------*/
+  /*                Forms                   */
+  /*----------------------------------------*/
   .simple_form .input.boolean label,
   .simple_form .input.check_boxes .label_input > label,
   .simple_form .input.file .label_input > label,
   .simple_form .input.radio_buttons .label_input > label,
-  .simple_form .input.select .label_input > label,
+  .simple_form .input.select .label_input > label {
+    color: #14171a;
+  }
+
+  .simple_form input[type="email"],
+  .simple_form input[type="number"],
+  .simple_form input[type="password"],
+  .simple_form input[type="text"],
+  .simple_form textarea {
+    color: #14171a;
+    font-size: 16px;
+    font-family: inherit;
+    width: 100%;
+    padding: 0.8em 1em;
+    display: block;
+    border: 0;
+    border-radius: none;
+    resize: vertical;
+    outline: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: rgba(20, 23, 26, 0.04);
+  }
+
+  .simple_form .input.radio_buttons .radio label {
+    color: #14171a;
+    font-size: 14px;
+    font-family: inherit;
+    line-height: 30px;
+    vertical-align: baseline;
+    margin: 5px 0;
+    width: auto;
+    display: block;
+  }
+
+  .simple_form .label_input {
+    display: block;
+  }
+
+  .simple_form .label_input input {
+    margin: 0 0.5em 3px 0;
+    vertical-align: middle;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+  }
+
+  .simple_form .block-button,
+  .simple_form .button,
+  .simple_form button {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: inherit;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 0;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    background: rgba(20, 23, 26, 0.8);
+    outline: 0;
+  }
+
+  .button:disabled {
+    background-color: rgba(20, 23, 26, 0.4);
+    cursor: default;
+  }
+
+  .simple_form .input.check_boxes .label_input > label,
+  .simple_form .input.radio_buttons .label_input > label,
+  .simple_form .input.file .label_input > label,
+  .simple_form .input.select .label_input > label {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1em;
+    text-transform: uppercase;
+    vertical-align: middle;
+    padding: 0 0 0.7em;
+    width: auto;
+    display: block;
+  }
+
+  /*----------------------------------------*/
+  /*              Form Hints                */
+  /*----------------------------------------*/
   .simple_form span.hint {
-    color: inherit;
+    color: #14171a;
+    font-size: 1em;
+    margin: 0;
+    padding: 0 0 0.5em 0;
+    display: block;
+  }
+
+  .simple_form .input.boolean .hint,
+  .simple_form .radio span.hint {
+    font-style: italic;
+    line-height: 1.4em;
+    padding-left: 25px;
+    margin-left: 0;
+  }
+
+  .simple_form .field_with_hint span.hint {
+    font-style: italic;
+    line-height: 2em;
+  }
+
+  .admin-wrapper .content .muted-hint a {
+    color: rgba(20, 23, 26, 0.4);
   }
 
   /*----------------------------------------*/
@@ -345,7 +466,7 @@
 
   .reply-indicator__content a,
   .status__content a {
-    color: #a8afbc;
+    color: rgba(20, 23, 26, 0.4);
   }
 
   .status__content .status__content__spoiler-link {
@@ -380,6 +501,134 @@
 
   .getting-started__wrapper .column-link:hover {
     background: #f1f1f1;
+  }
+
+  /*----------------------------------------*/
+  /*                 Admin                  */
+  /*----------------------------------------*/
+  .admin-wrapper .sidebar-wrapper {
+    background: rgba(20, 23, 26, 0.04);
+  }
+
+  .admin-wrapper .content h2 {
+    color: #14171a;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin-bottom: 122px;
+  }
+
+  .admin-wrapper .content {
+    max-width: 700px;
+    padding: 78px 15px 20px 25px;
+  }
+
+  .admin-wrapper .content h6 {
+    color: #14171a;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 28px;
+    margin-bottom: 0.5em;
+  }
+
+  .admin-wrapper .sidebar ul ul {
+    margin: 0;
+    border-radius: 0;
+    background: rgba(20, 23, 26, 0.04);
+  }
+
+  .admin-wrapper .sidebar ul a {
+    color: #14171a;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 4px 0 0 4px;
+    display: block;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+  }
+
+  .admin-wrapper .sidebar ul a i.fa {
+    display: none;
+  }
+
+  .admin-wrapper .sidebar ul ul a {
+    color: rgba(20, 23, 26, 0.6);
+    border-bottom: 0;
+    border-radius: 0;
+    background: none;
+  }
+
+  .admin-wrapper .sidebar ul a.selected {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    border-radius: 0;
+    background: rgba(20, 23, 26, 0.08);
+  }
+
+  .admin-wrapper .sidebar ul ul a.selected {
+    color: #14171a;
+    text-transform: none;
+    border-bottom: 1px solid rgba(20, 23, 26, 0.4);
+    border-radius: 0;
+    background-color: #fff;
+  }
+
+  .admin-wrapper .sidebar ul ul a.selected:hover {
+    background-color: rgba(20, 23, 26, 0.25);
+  }
+
+  #web a,
+  #logout a {
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .admin-wrapper .content > p {
+    color: #14171a;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 20px;
+  }
+
+  .admin-wrapper .simple_form .label_input select {
+    width: 50%;
+    float: none;
+  }
+
+  .table td,
+  .table th {
+    font-size: 1.2em;
+    line-height: 18px;
+    vertical-align: top;
+    padding: 8px;
+    border: none;
+  }
+
+  .table > thead > tr > th {
+    vertical-align: bottom;
+    border: none;
+    border-top: 0;
+    font-weight: 500;
+  }
+
+  .table > tbody > tr:nth-child(2n+1) > td,
+  .table > tbody > tr:nth-child(2n+1) > th {
+    background: rgba(20, 23, 26, 0.08);
+  }
+
+  a.table-action-link {
+    color: #14171a;
+    font-weight: 400;
+    text-decoration: none;
+    margin-right: 5px;
+    padding: 0 10px;
+    display: inline-block;
   }
 
   @media (min-width: 1200px) {
