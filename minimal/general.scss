@@ -168,11 +168,9 @@ body.admin,
   color: #14171a;
 }
 
-
 /*----------------------------------------*/
 /*                Forms                   */
 /*----------------------------------------*/
-
 .simple_form .input.boolean label,
 .simple_form .input.check_boxes .label_input > label,
 .simple_form .input.file .label_input > label,
@@ -214,7 +212,6 @@ body.admin,
 
 .simple_form .label_input {
   display: block;
-
 }
 
 .simple_form .label_input input {
@@ -269,11 +266,9 @@ body.admin,
   display: block;
 }
 
-
 /*----------------------------------------*/
 /*              Form Hints                */
 /*----------------------------------------*/
-
 .simple_form span.hint {
   color: rgba(20,23,26,1);
   font-size: 1em;
@@ -281,6 +276,7 @@ body.admin,
   padding: 0 0 0.5em 0;
   display: block;
 }
+
 .simple_form .input.boolean .hint,
 .simple_form .radio span.hint {
   font-style: italic;
@@ -292,7 +288,6 @@ body.admin,
 .simple_form .field_with_hint span.hint {
   font-style: italic;
   line-height: 2em;
-
 }
 
 .admin-wrapper .content .muted-hint a {
@@ -447,7 +442,7 @@ body.admin,
 
 .status {
   margin: 0 1em 0 0;
-  padding: 8px 30px 2em 68px;
+  padding: 1em 30px 1em 68px;
   border-bottom: 0;
 }
 
@@ -455,6 +450,23 @@ body.admin,
   border: 10px solid rgba(20, 23, 26, 0.1);
   border-collapse: collapse;
   background: #fff;
+}
+
+.status.status-direct::after {
+  content: "";
+  padding: 0;
+  margin: 0;
+  border: 20px solid #e7e7e7;
+  border-bottom: 20px solid transparent;
+  border-right: 20px solid transparent;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
 }
 
 .status.status-direct + .status.status-direct {
@@ -467,6 +479,14 @@ body.admin,
 
 .notification__display-name:hover {
   color: inherit;
+}
+
+.status__avatar {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 16px;
+  left: 10px;
 }
 
 .account {
@@ -662,7 +682,6 @@ body.admin,
 /*----------------------------------------*/
 /*         Getting Started Column         */
 /*----------------------------------------*/
-
 .getting-started__wrapper .column-link {
   color: inherit;
   padding-left: 17px;
@@ -673,11 +692,9 @@ body.admin,
   background: #f1f1f1;
 }
 
-
 /*----------------------------------------*/
 /*                 Admin                  */
 /*----------------------------------------*/
-
 .admin-wrapper .sidebar-wrapper {
   background: rgba(20, 23, 26, 0.04);
 }
@@ -802,7 +819,6 @@ a.table-action-link {
   padding: 0 10px;
   display: inline-block;
 }
-
 
 @media (min-width: 1200px) {
   .drawer {
