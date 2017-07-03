@@ -20,6 +20,18 @@ body.admin,
   background: #fff;
 }
 
+.icon-button {
+  color: rgba(20, 23, 26, 0.8);
+  padding: 0;
+  display: inline-block;
+  border: none;
+  background: transparent;
+  -webkit-transition: color .1s ease-in;
+  transition: color .1s ease-in;
+  cursor: pointer;
+}
+
+
 /*----------------------------------------*/
 /*                 Drawer                 */
 /*----------------------------------------*/
@@ -492,6 +504,159 @@ body.admin,
 .notification__message {
   color: #14171a;
 }
+
+
+/*----------------------------------------*/
+/*             Account Header             */
+/*----------------------------------------*/
+
+.account-timeline__header {
+  color: rgba(20, 23, 26, 0.8);
+  margin: 0 0 3em;
+}
+
+.account__header {
+  text-align: left;
+  background: rgba(20, 23, 26, 1);
+}
+
+.account__header[style*="missing"] {
+  background-color: rgba(20, 23, 26, 0.08);
+  background-image: repeating-linear-gradient(135deg, transparent, transparent 10px, white 10px, white 20px) !important;
+}
+
+.account__header > div {
+  background: none;
+  padding: 0;
+  overflow: hidden;
+}
+
+.account__header__avatar {
+  margin: 20px 25px 15px;
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  border-radius: 50% !important;
+  display: block;
+  background-size: 90px 90px;
+  outline: none;
+  transition: box-shadow 500ms cubic-bezier(.2,0,.7,1),
+              border 0.5s;
+}
+
+.account__header__avatar:hover {
+  box-shadow: 0 0 1px 1px rgba(0,0,0, 0.3),
+              0 0 1px 15px rgba(0,0,0, 0.1);
+}
+
+.account__header .account__header__display-name {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  vertical-align: top;
+  margin: 0 auto;
+  padding: 13px 1.6em 0 24px;
+  width: auto;
+  display: inline-block;
+  background: rgba(20, 23, 26, 0.8);
+}
+
+.account__header .account__header__username {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1em;
+  vertical-align: top;
+  margin: 0;
+  padding: 0.8em 24px 0;
+  width: 74%;
+  display: block;
+  background: rgba(20, 23, 26, 0.8);
+}
+
+.account__header .account__header__content {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  word-break: normal;
+  word-wrap: break-word;
+  width: 74%;
+  padding: 20px 24px;
+  margin: 0;
+  overflow: hidden;
+  background: rgba(20, 23, 26, 0.8);
+}
+
+.account__header a {
+  color: #fff;
+}
+
+.account__action-bar {
+  border: none;
+  line-height: 36px;
+  overflow: hidden;
+}
+
+.account__action-bar-dropdown {
+  padding: 14px 0 0 15px;
+  -webkit-box-flex: 1;
+          -ms-flex: 1 1 auto;
+              flex: 1 1 auto;
+}
+
+.account__action-bar__tab {
+  color: inherit;
+  border: none;
+}
+
+.account__action-bar__tab > span {
+  color: inherit;
+  font-size: 11px;
+  text-transform: uppercase;
+  display: block;
+}
+
+.account__action-bar__tab strong {
+  color: inherit;
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.account__action-bar__tab abbr {
+  color: rgba(20, 23, 26, 0.8);
+}
+
+.account--action-button {
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  left: auto;
+  right: 10px
+}
+
+.account__header .icon-button {
+  color: #fff;
+}
+
+.account--follows-info {
+  color: #fff;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: top;
+  background-color: rgba(0,0,0,.4);
+  padding: 4px;
+  border-radius: 4px;
+  opacity: .7;
+  position: absolute;
+  top: 13px;
+  right: 60px;
+}
+
 
 
 /*----------------------------------------*/
